@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Revisa y gestiona tu carrito de compras con los productos farmacéuticos de Corporación Umbrella.">
+  <meta name="keywords" content="carrito, compras, farmacéutica, Umbrella, medicamentos">
+  <meta name="author" content="Corporación Umbrella">
+  <title>Corporación Umbrella - Carrito</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <img src="../img/umbrella-logo.png" alt="Logo de Corporación Umbrella, un paraguas rojo y blanco" class="umbrella-logo">
+    <h1>Corporación Umbrella</h1>
+    <p>Preservando la salud de la gente</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="contactos.html">Contacto</a></li>
+      <li><a href="comentarios.html">Comentarios</a></li>
+      <li><a href="carrito.html">Carrito <span class="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="cart fade-in">
+      <div class="container">
+        <h2>Tu Carrito</h2>
+        <div id="cart-list"></div>
+        <div class="cart-total">
+          <h3>Total: $<span id="cart-total">0.00</span></h3>
+          <button id="clear-cart" aria-label="Vaciar todos los productos del carrito">Vaciar Carrito</button>
+          <form id="checkout-form" action="https://formspree.io/f/xldbvzqy" method="POST" class="contact-form">
+            <input type="hidden" name="cart" id="cart-data">
+            <button type="submit" id="checkout-btn" aria-label="Finalizar la compra del carrito">Finalizar Compra</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="https://facebook.com/UmbrellaCorp">Facebook</a>
+          <a href="https://instagram.com/UmbrellaCorp">Instagram</a>
+          <a href="https://linkedin.com/company/UmbrellaCorp">LinkedIn</a>
+        </div>
+      </div>
+      <div>
+        <h3>Corporación Umbrella</h3>
+        <p>© 2025 Corporación Umbrella. Todos los derechos reservados.</p>
+        <p>Liderando el Futuro de la Salud y la Innovación</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

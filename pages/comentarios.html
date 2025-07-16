@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Comparte tus reseñas y opiniones sobre los productos y servicios de Corporación Umbrella.">
+  <meta name="keywords" content="reseñas, comentarios, farmacéutica, Umbrella, opiniones">
+  <meta name="author" content="Corporación Umbrella">
+  <title>Corporación Umbrella - Reseñas</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <img src="../img/umbrella-logo.png" alt="Logo de Corporación Umbrella, un paraguas rojo y blanco" class="umbrella-logo">
+    <h1>Corporación Umbrella</h1>
+    <p>Preservando la salud de la gente</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="contactos.html">Contacto</a></li>
+      <li><a href="comentarios.html">Comentarios</a></li>
+      <li><a href="carrito.html">Carrito <span class="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="fade-in">
+      <div class="container">
+        <h2>Reseñas</h2>
+        <div id="reviews-list" aria-live="polite"></div>
+        <form id="review-form" action="https://formspree.io/f/xldbvzqy" method="POST" class="contact-form">
+          <div>
+            <label for="_name">Nombre:</label>
+            <input type="text" id="_name" name="_name" required aria-label="Tu nombre">
+          </div>
+          <div>
+            <label for="message">Comentario:</label>
+            <textarea id="message" name="message" rows="4" required aria-label="Tu comentario"></textarea>
+          </div>
+          <button type="submit" aria-label="Enviar tu reseña">Enviar Reseña</button>
+          <p class="form-error">Por favor, completa todos los campos.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="https://facebook.com/UmbrellaCorp">Facebook</a>
+          <a href="https://instagram.com/UmbrellaCorp">Instagram</a>
+          <a href="https://linkedin.com/company/UmbrellaCorp">LinkedIn</a>
+        </div>
+      </div>
+      <div>
+        <h3>Corporación Umbrella</h3>
+        <p>© 2025 Corporación Umbrella. Todos los derechos reservados.</p>
+        <p>Liderando el Futuro de la Salud y la Innovación</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
